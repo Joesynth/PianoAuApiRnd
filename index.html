@@ -1,0 +1,170 @@
+<html>
+  <head>
+    
+    <style>
+
+/* Geral. Pense na tela deitada, tal como monitor de computador. */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: lightgreen;
+  }
+  
+div {
+  background-color: lightsalmon;
+  height: 88%;
+  text-align: center;
+}
+
+div button {
+  height: 88%;
+  width: 11%;
+}
+
+
+/* @media */
+/* Aqui pense em tela de celular, em pé. Então, podemos considerar "se tela de celular" então tal tal, tal, tal." */
+@media all and (max-width: 600px) {
+  
+  body {
+    background-color: lightblue;
+  }
+
+div {
+  background-color: lightsalmon;
+  height: 33%;
+}
+
+  }
+
+
+
+   
+    </style>
+  
+  </head>
+  <body>
+
+<audio id="a1">
+	<source id="s1" type="audio/mp3">
+</audio>
+
+<audio id="a2">
+	<source id="s2" type="audio/mp3">
+</audio>
+
+<audio id="a3">
+	<source id="s3" type="audio/mp3">
+</audio>
+
+<audio id="a4">
+	<source id="s4" type="audio/mp3">
+</audio>
+
+<audio id="a5">
+	<source id="s5" type="audio/mp3">
+</audio>
+
+<audio id="a6">
+	<source id="s6" type="audio/mp3">
+</audio>
+
+<audio id="a7">
+	<source id="s7" type="audio/mp3">
+</audio>
+
+<audio id="a8">
+	<source id="s8" type="audio/mp3">
+</audio>
+
+<div>
+  <button id="bo1" onclick="pRnd0()">C</button>
+  <button id="bo2" onclick="pRnd1()">D</button>
+  <button id="bo3" onclick="pRnd2()">E</button>
+  <button id="bo4" onclick="pRnd3()">F</button>
+  <button id="bo5" onclick="pRnd4()">G</button>
+  <button id="bo6" onclick="pRnd5()">A</button>
+  <button id="bo7" onclick="pRnd6()">B</button>
+  <button id="bo8" onclick="pRnd7()">C</button>
+</div>
+
+<p>⚠️ Semelhante ao Piano5, porém usa formato de áudio .opus e API áudio.</p>
+
+
+
+
+
+<script>
+
+
+
+
+		const aA = ["c.opus","d.opus","e.opus","f.opus","g.opus","a.opus","b.opus","c2.opus",
+];
+		
+		function pRnd0 () {
+			const audioIndex = 0;		/* Foi mudado "Math.floor(Math.random() * aA.length)" para "0" */
+			const audio = new Audio(aA[audioIndex]);
+			audio.play();
+		
+		}
+
+		function pRnd1 () {				/* Note que esta função tem nome diferente da primeira. */
+			const audioIndex = 1;		/* Foi mudado "Math.floor(Math.random() * aA.length)" para "1" */
+			const audio = new Audio(aA[audioIndex]);
+			audio.play();
+		
+		}
+
+		function pRnd2 () {
+			const audioIndex = 2;
+			const audio = new Audio(aA[audioIndex]);
+			audio.play();
+		
+		}
+
+		function pRnd3 () {
+			const audioIndex = 3;
+			const audio = new Audio(aA[audioIndex]);
+			audio.play();
+		
+		}
+
+		function pRnd4 () {
+			const audioIndex = 4;
+			const audio = new Audio(aA[audioIndex]);
+			audio.play();
+		
+		}
+
+		function pRnd5 () {
+			const audioIndex = 5;
+			const audio = new Audio(aA[audioIndex]);
+			audio.play();
+		
+		}
+
+		function pRnd6 () {
+			const audioIndex = 6;
+			const audio = new Audio(aA[audioIndex]);
+			audio.play();
+		
+		}
+
+		function pRnd7 () {
+			const audioIndex = 7;
+			const audio = new Audio(aA[audioIndex]);
+			audio.play();
+		
+		}
+
+
+</script>
+
+  
+  </body>
+</html>
